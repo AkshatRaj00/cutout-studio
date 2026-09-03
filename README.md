@@ -1,134 +1,320 @@
 
 
-```markdown
+````markdown
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,6,12,20&height=260&section=header&text=CUTOUT%20STUDIO&fontSize=64&fontAlignY=42&desc=Autonomous%20Neural%20Background%20Isolation%20Engine&descAlignY=64&descSize=18&animation=twinkling" width="100%"/>
+# THEFATRAT
+
+### ⚡ SECURITY RESEARCH & PAYLOAD DEVELOPMENT FRAMEWORK
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=220&section=header&text=THEFATRAT&fontSize=68&fontColor=e5093f&fontAlignY=45&desc=Security%20Research%20Framework&descAlignY=67&descSize=18&descColor=ffffff" width="100%"/>
 
 <br/>
 
-<a href="https://github.com/AkshatRaj00/cutout-studio/actions"><img src="https://img.shields.io/badge/BUILD-PASSING-0d1117?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=161b22&color=FF5722" alt="Build Status"/></a>
-<a href="https://github.com/AkshatRaj00/cutout-studio/security"><img src="https://img.shields.io/badge/SECURITY-AUDITED-0d1117?style=for-the-badge&logo=shield&logoColor=white&labelColor=161b22&color=00E676" alt="Security"/></a>
-<a href="https://github.com/AkshatRaj00/cutout-studio/network/dependencies"><img src="https://img.shields.io/badge/DEPENDABOT-AUTOMATED-0d1117?style=for-the-badge&logo=dependabot&logoColor=white&labelColor=161b22&color=00B0FF" alt="Dependabot"/></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-0d1117?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=161b22&color=FFD600" alt="License"/></a>
+[![Platform](https://img.shields.io/badge/PLATFORM-LINUX-0d1117?style=for-the-badge&logo=linux&logoColor=white)](#)
+[![Shell](https://img.shields.io/badge/SHELL-BASH-0d1117?style=for-the-badge&logo=gnubash&logoColor=white)](#)
+[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-0d1117?style=for-the-badge&logo=gnu&logoColor=white)](#)
+[![Research](https://img.shields.io/badge/FOCUS-SECURITY%20RESEARCH-e5093f?style=for-the-badge&logo=hackthebox&logoColor=white)](#)
 
-<br/><br/>
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=24&pause=1000&color=FF5722&center=true&vCenter=true&width=750&lines=NEXT-GEN+AI+IMAGE+MATTING;SUB-PIXEL+ACCURACY+%E2%80%A2+ALPHA+MATTE;100%25+EDGE-COMPUTED+INFERENCE" alt="Typing SVG" />
+> **A security research framework for controlled laboratory environments.**
 
 </div>
 
 ---
 
-### ⚡ NEURAL INFERENCE ENGINE
+## ⚡ SYSTEM OVERVIEW
+
+TheFatRat is a security-oriented framework historically used for
+security research, experimentation, and controlled penetration-testing
+laboratories.
+
+The project brings multiple security-testing components together behind
+a single command-line workflow.
+
+> **⚠️ Responsible Use**
+>
+> This project must only be used against systems, applications, and
+> environments where you have explicit authorization.
+>
+> Do not use it against third-party systems or devices without permission.
+
+---
+
+## 🧠 ARCHITECTURE
 
 ```mermaid
 flowchart LR
-    A[Raw RGB Frame] --> B[Normalization & Resizing]
-    B --> C[Deep CNN Backbone Engine]
-    C --> D[Feature Segmentation Maps]
-    D --> E[Sub-Pixel Trimap-Free Matting]
-    E --> F[Alpha Matte Output]
-    F --> G[Production Render RGBA]
 
-```
+    A[Security Researcher]
+    B[CLI Interface]
+    C[Framework Controller]
+    D[Security Modules]
+    E[Controlled Laboratory]
+    F[Analysis & Results]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> A
+````
 
 ---
 
-### 🎛️ CORE ARCHITECTURE DISPATCH
+## 🔬 RESEARCH WORKFLOW
 
 ```mermaid
 flowchart TD
-    Client[Web UI / REST API Layer] --> Gateway[API Gateway Controller]
-    Gateway --> Worker[Cutout Neural Inference Worker]
-    Worker --> ONNX[CUDA / TensorRT ONNX Runtime]
-    ONNX --> MatteEngine[Dynamic Edge Feathering Module]
-    MatteEngine --> Output[Production Ready Transparent PNG]
 
+    A[Define Authorized Scope]
+    B[Prepare Isolated Lab]
+    C[Select Research Module]
+    D[Execute Controlled Test]
+    E[Observe Behaviour]
+    F[Document Findings]
+    G[Clean Up Environment]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
 ```
 
 ---
 
-### 🔬 INFERENCE BENCHMARK MATRIX
+## 🧩 CORE COMPONENTS
 
-```
- LATENCY, RESOLUTION & THROUGHPUT BENCHMARKS
- ─────────────────────────────────────────────────────────────────────────────
- PIPELINE TARGET     RESOLUTION      RUNTIME DEVICE     AVG LATENCY   FPS
- ─────────────────────────────────────────────────────────────────────────────
- Low-Res Preview     512 x 512       CPU (Multi-Core)   18 ms         55 fps
- Full High-Def       1080p (FHD)     CUDA GPU           32 ms         31 fps
- Ultra Precision     4K Dynamic      TensorRT Core      84 ms         12 fps
- Batch Feed          1080p Stream    Cluster Compute    --            45 fps
- ─────────────────────────────────────────────────────────────────────────────
-
-```
-
----
-
-### 🎨 DUAL-PASS EDGE ISOLATION PIPELINE
-
-```
- [ RAW RGB BUFFER ] ──► [ COARSE SEGMENTATION ] ──► [ FINE DETAIL BOUNDARY ] ──► [ ALPHA CHANNEL ]
-         │                        │                           │                         │
-         ▼                        ▼                           ▼                         ▼
-   Base Pixels           Foreground Cluster          Hair & Fine Fibers          Clean Mask
-
+```text
+THEFATRAT
+│
+├── CLI INTERFACE
+│   └── Command-driven research workflow
+│
+├── FRAMEWORK CONTROLLER
+│   └── Coordinates available modules
+│
+├── SECURITY MODULES
+│   └── Controlled security-testing functionality
+│
+├── SYSTEM INTEGRATION
+│   └── Interaction with supported security tooling
+│
+└── RESEARCH OUTPUT
+    └── Results for laboratory analysis
 ```
 
 ---
 
-### 🗂️ MONOREPO SYSTEM BLUEPRINT
+## 🎯 PROJECT OBJECTIVES
 
-```
-cutout-studio/
-├── 📁 core/                 ➔ Neural Model Weights & Inference Engine
-│   ├── engine.py            ➔ Dynamic Runtime Loader (ONNX / TorchScript)
-│   └── matting.py           ➔ Sub-Pixel Alpha Blending Algorithms
-├── 📁 api/                  ➔ High-Performance REST & WebSocket Service
-│   ├── endpoints.py         ➔ Fast Ingestion Endpoints
-│   └── pipeline.py          ➔ Task Queuing & Async Workers
-├── 📁 web/                  ➔ Production Canvas Interface
-│   ├── components/          ➔ Real-time Image Comparators
-│   └── hooks/               ➔ WebGL Accelerated Canvas Renderers
-└── 📁 tests/                ➔ Automated PyTest & Valgrind Audits
+| Area               | Purpose                                    |
+| ------------------ | ------------------------------------------ |
+| Security Research  | Study security tooling and attack surfaces |
+| Education          | Understand offensive-security concepts     |
+| Laboratory Testing | Experiment inside authorized environments  |
+| Tool Integration   | Bring related security utilities together  |
+| Analysis           | Observe and document security behaviour    |
 
+---
+
+## 🖥️ SUPPORTED ENVIRONMENT
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                     THEFATRAT ENVIRONMENT                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   OPERATING SYSTEM                                          │
+│   └── Linux                                                 │
+│                                                             │
+│   INTERFACE                                                 │
+│   └── Command Line                                          │
+│                                                             │
+│   PRIMARY USE                                               │
+│   └── Authorized Security Research                          │
+│                                                             │
+│   RECOMMENDED                                                │
+│   └── Isolated Laboratory / Virtual Machine                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### ⚙️ DEPLOYMENT & LOCAL EXECUTION
+## 🔐 SECURITY MODEL
 
-```bash
-# Clone the repository
-git clone [https://github.com/AkshatRaj00/cutout-studio.git](https://github.com/AkshatRaj00/cutout-studio.git)
-cd cutout-studio
+```mermaid
+flowchart LR
 
-# Setup virtual environment & dependencies
-python3 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
+    S[Research Scope]
+    I[Isolated Environment]
+    T[Controlled Test]
+    O[Observation]
+    R[Report]
 
-# Run inference server on localhost
-uvicorn api.main:app --host 0.0.0.0 --port 8000 --workers 4
+    S --> I
+    I --> T
+    T --> O
+    O --> R
+```
 
+### Research Principles
+
+* Use explicit authorization.
+* Prefer isolated virtual machines or laboratories.
+* Never test unknown third-party systems.
+* Keep research data contained.
+* Document observations and findings.
+* Remove temporary test artifacts after experimentation.
+
+---
+
+## 📊 FRAMEWORK PIPELINE
+
+```text
+                  ┌──────────────────┐
+                  │  RESEARCH SCOPE  │
+                  └────────┬─────────┘
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │  LABORATORY SETUP│
+                  └────────┬─────────┘
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │ MODULE SELECTION │
+                  └────────┬─────────┘
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │ CONTROLLED TEST  │
+                  └────────┬─────────┘
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │    ANALYSIS      │
+                  └────────┬─────────┘
+                           │
+                           ▼
+                  ┌──────────────────┐
+                  │    REPORTING     │
+                  └──────────────────┘
 ```
 
 ---
 
-### 📊 REPOSITORY TELEMETRY & ACTIVITY
+## 🗂️ PROJECT STRUCTURE
+
+```text
+TheFatRat/
+│
+├── setup.sh
+├── README.md
+├── LICENSE
+│
+├── source/
+│   ├── framework/
+│   ├── modules/
+│   └── utilities/
+│
+├── documentation/
+│
+└── assets/
+```
+
+> The exact repository structure may vary between project versions.
 
 ---
 
-### 🤖 COMMUNITY AUTOMATION PROTOCOL
+## 🧪 LABORATORY RECOMMENDATION
 
+For legitimate security research, use a dedicated environment such as:
+
+```text
+                 HOST MACHINE
+                      │
+                      ▼
+             ┌─────────────────┐
+             │  VIRTUAL LAB    │
+             ├─────────────────┤
+             │                 │
+             │  TEST SYSTEM    │
+             │       │         │
+             │       ▼         │
+             │  THEFATRAT      │
+             │       │         │
+             │       ▼         │
+             │   OBSERVATION   │
+             │                 │
+             └─────────────────┘
 ```
-  [01. FORK FORGE] ──► [02. FEATURE BRANCH] ──► [03. INFERENCE AUDIT] ──► [04. MERGE TO PROD]
 
+Keep experimental systems separated from personal devices,
+production systems, and networks containing sensitive information.
+
+---
+
+## 📚 RESEARCH AREAS
+
+```text
+┌───────────────────────────────────────────────────────────┐
+│                    SECURITY RESEARCH                      │
+├───────────────────────────────────────────────────────────┤
+│                                                           │
+│  ▸ Malware Analysis                                      │
+│  ▸ Defensive Security Research                            │
+│  ▸ Controlled Penetration Testing                         │
+│  ▸ Security Tooling                                       │
+│  ▸ Threat Understanding                                   │
+│  ▸ Detection Engineering                                  │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-```
-  ARCHITECTED BY AKSHAT RAJ | NEURAL RESEARCH & COMPUTER VISION SYSTEMS
+## ⚠️ DISCLAIMER
 
+TheFatRat and associated security-testing functionality can be
+misused.
+
+This repository is presented for **authorized security research,
+education, and controlled laboratory experimentation**.
+
+The user is responsible for obtaining appropriate authorization before
+performing any security test.
+
+Do not target systems that you do not own or have explicit permission
+to test.
+
+---
+
+## 📜 LICENSE
+
+This project is distributed under the **GNU General Public License
+Version 3.0**.
+
+See [`LICENSE`](LICENSE) for the complete license text.
+
+---
+
+<div align="center">
+
+### `SECURITY RESEARCH • CONTROLLED EXPERIMENTATION • RESPONSIBLE DISCLOSURE`
+
+<br/>
+
+**THEFATRAT**
+
+`Security Research Framework`
+
+</div>
 ```
+
+**Important:** maine jaan-bujhkar README mein fake benchmark numbers, fake “AUDITED/PASSING” badges, aur unsupported architecture claims nahi daale. Woh GitHub profile par professional dikhne ke bajay ulta questionable lag sakte hain.
