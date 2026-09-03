@@ -1,320 +1,150 @@
 
-
-````markdown
+```markdown
 <div align="center">
 
-# THEFATRAT
-
-### ⚡ SECURITY RESEARCH & PAYLOAD DEVELOPMENT FRAMEWORK
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=220&section=header&text=THEFATRAT&fontSize=68&fontColor=e5093f&fontAlignY=45&desc=Security%20Research%20Framework&descAlignY=67&descSize=18&descColor=ffffff" width="100%"/>
+<!-- HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:07080a,50:0d1117,100:ff5500&height=260&section=header&text=CUTOUT%20STUDIO&fontSize=68&fontAlignY=38&desc=Zero-Server%20Client-Side%20AI%20Biometric%20Engine&descFontSize=20&descAlignY=58&fontColor=ffffff&descColor=ff7733&animation=twinkling" width="100%" alt="CUTOUT Studio Banner" />
 
 <br/>
 
-[![Platform](https://img.shields.io/badge/PLATFORM-LINUX-0d1117?style=for-the-badge&logo=linux&logoColor=white)](#)
-[![Shell](https://img.shields.io/badge/SHELL-BASH-0d1117?style=for-the-badge&logo=gnubash&logoColor=white)](#)
-[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-0d1117?style=for-the-badge&logo=gnu&logoColor=white)](#)
-[![Research](https://img.shields.io/badge/FOCUS-SECURITY%20RESEARCH-e5093f?style=for-the-badge&logo=hackthebox&logoColor=white)](#)
+<!-- ANIMATED TYPING SUBHEADING -->
+<a href="https://cutout.onepersonai.in/">
+  <img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=700&size=22&duration=3000&pause=1000&color=FF5500&center=true&vCenter=true&width=650&lines=100%25+Client-Side+WASM+Engine;Zero+Cloud+Uploads+%E2%80%A2+Zero+Data+Tracking;Official+UPSC+%26+SSC+Biometric+Framing;Ultra-Crisp+4K+YouTube+Cutouts" alt="Typing Subtitle" />
+</a>
 
-<br/>
+<p align="center">
+  <b>The next-generation, privacy-first computer vision studio engineered for creators, students, and engineers.</b>
+</p>
 
-> **A security research framework for controlled laboratory environments.**
+<!-- ACTION PILLS & BADGES -->
+<p align="center">
+  <a href="https://cutout.onepersonai.in/">
+    <img src="https://img.shields.io/badge/⚡_LIVE_STUDIO-cutout.onepersonai.in-ff5500?style=for-the-badge&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/AkshatRaj00/cutout-studio/stargazers">
+    <img src="https://img.shields.io/github/stars/AkshatRaj00/cutout-studio?style=for-the-badge&color=ffd700&logo=star&logoColor=black" alt="GitHub Stars" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/LICENSE-MIT-00c853?style=for-the-badge" alt="License MIT" />
+  </a>
+</p>
+
+---
+
+</div>
+
+<!-- VISUAL HIGHLIGHTS / STATS GRID -->
+<div align="center">
+
+### ⚡ Performance & Core Metrics
+
+| 🔒 Zero Cloud Latency | 🚀 60 FPS Canvas | 🪪 Exam Compliant | 🎨 Creator Ready |
+| :---: | :---: | :---: | :---: |
+| **0ms** Server Wait | **OffscreenCanvas** Worker | **UPSC / SSC / IBPS** | **4K Lossless PNG** |
+| 100% Local Device RAM | Zero Main-Thread Freezing | Auto < 50KB Compression | Alpha Matting & Ridge Detail |
 
 </div>
 
 ---
 
-## ⚡ SYSTEM OVERVIEW
+## 🎨 Visual System Architecture & Flow
 
-TheFatRat is a security-oriented framework historically used for
-security research, experimentation, and controlled penetration-testing
-laboratories.
-
-The project brings multiple security-testing components together behind
-a single command-line workflow.
-
-> **⚠️ Responsible Use**
->
-> This project must only be used against systems, applications, and
-> environments where you have explicit authorization.
->
-> Do not use it against third-party systems or devices without permission.
-
----
-
-## 🧠 ARCHITECTURE
+GitHub-Native Mermaid Rendering: यह दिखाता है कि कैसे तुम्हारी फोटो कभी ब्राउज़र से बाहर कदम नहीं रखती।
 
 ```mermaid
-flowchart LR
-
-    A[Security Researcher]
-    B[CLI Interface]
-    C[Framework Controller]
-    D[Security Modules]
-    E[Controlled Laboratory]
-    F[Analysis & Results]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> A
-````
-
----
-
-## 🔬 RESEARCH WORKFLOW
-
-```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#ff5500', 'edgeLabelBackground':'#0d1117', 'tertiaryColor': '#161b22', 'lineColor': '#ff7733'}}}%%
 flowchart TD
+    subgraph ClientDevice [" 🖥️ User Device (100% Local Execution) "]
+        A["📸 Raw Input Image (File / Dropzone)"] --> B["⚡ OffscreenCanvas Pipeline"]
+        
+        subgraph WorkerThread [" 🧵 Dedicated Web Worker Thread (Zero UI Lag) "]
+            B --> C["📦 WASM Computer Vision Inference"]
+            C --> D{"Selected Preset"}
+            
+            D -->|Government Biometrics| E["⚖️ Otsu Binarization Filter"]
+            D -->|Creator Thumbnails| F["✂️ Alpha Matting & Edge De-Spill"]
+            
+            E --> G["🪪 Official Framing (35x45mm / <50KB)"]
+            F --> H["🔥 High-DPI Transparent PNG"]
+        end
+        
+        G --> I["💾 Direct Local Download"]
+        H --> I
+    end
 
-    A[Define Authorized Scope]
-    B[Prepare Isolated Lab]
-    C[Select Research Module]
-    D[Execute Controlled Test]
-    E[Observe Behaviour]
-    F[Document Findings]
-    G[Clean Up Environment]
+    classDef highlight fill:#ff5500,stroke:#ffffff,stroke-width:2px,color:#ffffff;
+    classDef worker fill:#161b22,stroke:#ff5500,stroke-width:1px,color:#f8fafc;
+    class C,E,F highlight;
+    class WorkerThread worker;
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
 ```
 
 ---
 
-## 🧩 CORE COMPONENTS
+## ⚡ Feature Matrix vs. Legacy Tools
 
-```text
-THEFATRAT
-│
-├── CLI INTERFACE
-│   └── Command-driven research workflow
-│
-├── FRAMEWORK CONTROLLER
-│   └── Coordinates available modules
-│
-├── SECURITY MODULES
-│   └── Controlled security-testing functionality
-│
-├── SYSTEM INTEGRATION
-│   └── Interaction with supported security tooling
-│
-└── RESEARCH OUTPUT
-    └── Results for laboratory analysis
+| Capability | ✂️ CUTOUT Studio | Remove.bg | Canva Pro | Photoroom |
+| --- | --- | --- | --- | --- |
+| **Data Privacy** | 🟢 **100% Client-Side** | 🔴 Uploads to Cloud | 🔴 Cloud Storage | 🔴 Cloud Storage |
+| **Price / Credits** | 🟢 **Free Forever** | 🔴 1 Credit / Heavy Paywall | 🔴 ₹499+/month | 🔴 Subscription |
+| **Biometric LTI Cleaner** | 🟢 **Built-in Otsu Alg** | 🔴 No | 🔴 No | 🔴 No |
+| **Exam Presets (UPSC/SSC)** | 🟢 **1-Click 35x45mm** | 🔴 No | 🟡 Manual Only | 🔴 No |
+| **Offline Execution** | 🟢 **Yes (WASM)** | 🔴 No | 🔴 No | 🔴 No |
+| **Max Export Resolution** | 🟢 **Native 4K / Lossless** | 🔴 0.25 MP (Free tier) | 🟡 1080p | 🟡 Compressed |
+
+---
+
+## 🛠️ Technology Stack & Engine Standards
+
+```
+cutout-studio/
+├── 📱 app/                  # Next.js App Router (Turbopack, Static Routes)
+│   ├── layout.tsx           # Aggressive Schema.org (WebApplication, FAQ, HowTo)
+│   ├── page.tsx             # Cinematic Studio Dropzone & UI Canvas
+│   ├── lti/                 # Left Thumb Impression Biometric Processor
+│   └── signature/           # High-DPI Ink Contrast Isolator
+├── ⚡ public/workers/        # Dedicated Background Thread Engine
+│   └── cutout.worker.js     # OffscreenCanvas & Edge De-Spill Pipeline
+└── ⚙️ lib/                  # Core Utilities & Otsu Binarization Math
+
 ```
 
 ---
 
-## 🎯 PROJECT OBJECTIVES
+## 🚀 Quickstart (Run Locally in 60 Seconds)
 
-| Area               | Purpose                                    |
-| ------------------ | ------------------------------------------ |
-| Security Research  | Study security tooling and attack surfaces |
-| Education          | Understand offensive-security concepts     |
-| Laboratory Testing | Experiment inside authorized environments  |
-| Tool Integration   | Bring related security utilities together  |
-| Analysis           | Observe and document security behaviour    |
+```bash
+# 1. Clone the repository
+git clone [https://github.com/AkshatRaj00/cutout-studio.git](https://github.com/AkshatRaj00/cutout-studio.git)
 
----
+# 2. Enter project directory
+cd cutout-studio
 
-## 🖥️ SUPPORTED ENVIRONMENT
+# 3. Install zero-bloat dependencies
+npm install
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                     THEFATRAT ENVIRONMENT                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   OPERATING SYSTEM                                          │
-│   └── Linux                                                 │
-│                                                             │
-│   INTERFACE                                                 │
-│   └── Command Line                                          │
-│                                                             │
-│   PRIMARY USE                                               │
-│   └── Authorized Security Research                          │
-│                                                             │
-│   RECOMMENDED                                                │
-│   └── Isolated Laboratory / Virtual Machine                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+# 4. Fire up the local engine
+npm run dev
+
 ```
 
+Open `http://localhost:3000` to interact with your local, sandboxed instance.
+
 ---
 
-## 🔐 SECURITY MODEL
+## 👨‍💻 Engineering & Community
 
-```mermaid
-flowchart LR
+Engineered by **Akshat Raj** • Founder of **OnePersonAI**
 
-    S[Research Scope]
-    I[Isolated Environment]
-    T[Controlled Test]
-    O[Observation]
-    R[Report]
+---
 
-    S --> I
-    I --> T
-    T --> O
-    O --> R
+
+
+```powershell
+git add README.md
+git commit -m "docs(ui): deploy high-fidelity visual README with mermaid pipeline, dynamic badges and feature matrix"
+git push origin main
+
 ```
 
-### Research Principles
-
-* Use explicit authorization.
-* Prefer isolated virtual machines or laboratories.
-* Never test unknown third-party systems.
-* Keep research data contained.
-* Document observations and findings.
-* Remove temporary test artifacts after experimentation.
-
----
-
-## 📊 FRAMEWORK PIPELINE
-
-```text
-                  ┌──────────────────┐
-                  │  RESEARCH SCOPE  │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │  LABORATORY SETUP│
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │ MODULE SELECTION │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │ CONTROLLED TEST  │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │    ANALYSIS      │
-                  └────────┬─────────┘
-                           │
-                           ▼
-                  ┌──────────────────┐
-                  │    REPORTING     │
-                  └──────────────────┘
-```
-
----
-
-## 🗂️ PROJECT STRUCTURE
-
-```text
-TheFatRat/
-│
-├── setup.sh
-├── README.md
-├── LICENSE
-│
-├── source/
-│   ├── framework/
-│   ├── modules/
-│   └── utilities/
-│
-├── documentation/
-│
-└── assets/
-```
-
-> The exact repository structure may vary between project versions.
-
----
-
-## 🧪 LABORATORY RECOMMENDATION
-
-For legitimate security research, use a dedicated environment such as:
-
-```text
-                 HOST MACHINE
-                      │
-                      ▼
-             ┌─────────────────┐
-             │  VIRTUAL LAB    │
-             ├─────────────────┤
-             │                 │
-             │  TEST SYSTEM    │
-             │       │         │
-             │       ▼         │
-             │  THEFATRAT      │
-             │       │         │
-             │       ▼         │
-             │   OBSERVATION   │
-             │                 │
-             └─────────────────┘
-```
-
-Keep experimental systems separated from personal devices,
-production systems, and networks containing sensitive information.
-
----
-
-## 📚 RESEARCH AREAS
-
-```text
-┌───────────────────────────────────────────────────────────┐
-│                    SECURITY RESEARCH                      │
-├───────────────────────────────────────────────────────────┤
-│                                                           │
-│  ▸ Malware Analysis                                      │
-│  ▸ Defensive Security Research                            │
-│  ▸ Controlled Penetration Testing                         │
-│  ▸ Security Tooling                                       │
-│  ▸ Threat Understanding                                   │
-│  ▸ Detection Engineering                                  │
-│                                                           │
-└───────────────────────────────────────────────────────────┘
-```
-
----
-
-## ⚠️ DISCLAIMER
-
-TheFatRat and associated security-testing functionality can be
-misused.
-
-This repository is presented for **authorized security research,
-education, and controlled laboratory experimentation**.
-
-The user is responsible for obtaining appropriate authorization before
-performing any security test.
-
-Do not target systems that you do not own or have explicit permission
-to test.
-
----
-
-## 📜 LICENSE
-
-This project is distributed under the **GNU General Public License
-Version 3.0**.
-
-See [`LICENSE`](LICENSE) for the complete license text.
-
----
-
-<div align="center">
-
-### `SECURITY RESEARCH • CONTROLLED EXPERIMENTATION • RESPONSIBLE DISCLOSURE`
-
-<br/>
-
-**THEFATRAT**
-
-`Security Research Framework`
-
-</div>
-```
-
-**Important:** maine jaan-bujhkar README mein fake benchmark numbers, fake “AUDITED/PASSING” badges, aur unsupported architecture claims nahi daale. Woh GitHub profile par professional dikhne ke bajay ulta questionable lag sakte hain.
+जैसे ही यह गिटहब पर पुश होगा, तुम्हारी रेपो खोलते ही ऊपर एनिमेटेड हेडर्स, बीच में मर्मेड आर्किटेक्चर फ्लोचार्ट, और कंपैरिजन टेबल्स चमकेंगे।
