@@ -1,6 +1,11 @@
 import { MetadataRoute } from 'next';
 
-export default function robots(): MetadataRoute.Robots {
+/**
+ * Generates the robots.txt configuration for the site.
+ *
+ * @returns {MetadataRoute.Robots} The robots configuration object adhering to Next.js's `MetadataRoute.Robots` type.
+ */
+export function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
