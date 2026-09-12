@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 /**
  * Represents a single rule in the robots.txt configuration.
@@ -24,7 +24,8 @@ export function robots(): MetadataRoute.Robots {
     },
   ];
 
-  const sitemap: MetadataRoute.Robots['sitemap'] = 'https://cutout.onepersonai.in/sitemap.xml';
+  const sitemap: MetadataRoute.Robots['sitemap'] =
+    'https://cutout.onepersonai.in/sitemap.xml';
 
   return {
     rules,
