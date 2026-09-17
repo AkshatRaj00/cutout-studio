@@ -5,14 +5,20 @@ import type { MetadataRoute } from 'next';
  *
  * @type {MetadataRoute.Robots['rules'][number]}
  */
-type RobotRule = MetadataRoute.Robots['rules'][number];
+export type RobotRule = MetadataRoute.Robots['rules'][number];
+
+/**
+ * Internal type describing the full robots configuration.
+ * Extends Next.js `MetadataRoute.Robots` to keep the public contract unchanged.
+ */
+type RobotsConfig = MetadataRoute.Robots;
 
 /**
  * Generates the robots.txt configuration for the site.
  *
- * @returns {MetadataRoute.Robots} The robots configuration object adhering to Next.js's `MetadataRoute.Robots` type.
+ * @returns {RobotsConfig} The robots configuration object adhering to Next.js's `MetadataRoute.Robots` type.
  */
-export function robots(): MetadataRoute.Robots {
+export function robots(): RobotsConfig {
   const rules: RobotRule[] = [
     {
       userAgent: '*',
@@ -22,9 +28,9 @@ export function robots(): MetadataRoute.Robots {
       userAgent: 'Googlebot',
       allow: '/',
     },
-  ];
+  ] as const;
 
-  const sitemap: MetadataRoute.Robots['sitemap'] =
+  const sitemap: RobotsConfig['sitemap'] =
     'https://cutout.onepersonai.in/sitemap.xml';
 
   return {
