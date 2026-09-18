@@ -16,9 +16,12 @@ type RobotsConfig = MetadataRoute.Robots;
 /**
  * Generates the robots.txt configuration for the site.
  *
- * @returns {RobotsConfig} The robots configuration object adhering to Next.js's `MetadataRoute.Robots` type.
+ * @returns {RobotsConfig} The robots configuration object adhering to Next.js's
+ * `MetadataRoute.Robots` type.
  */
 export function robots(): RobotsConfig {
+  // Define the rules with explicit `RobotRule` typing. No `as const` is needed
+  // because `RobotRule[]` already captures the required shape.
   const rules: RobotRule[] = [
     {
       userAgent: '*',
@@ -28,8 +31,9 @@ export function robots(): RobotsConfig {
       userAgent: 'Googlebot',
       allow: '/',
     },
-  ] as const;
+  ];
 
+  // The sitemap URL conforms to the `sitemap` property of `MetadataRoute.Robots`.
   const sitemap: RobotsConfig['sitemap'] =
     'https://cutout.onepersonai.in/sitemap.xml';
 
