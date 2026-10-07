@@ -1,4 +1,6 @@
 
+
+````markdown
 # ✂️ CUTOUT Studio
 
 <div align="center">
